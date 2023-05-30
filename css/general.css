@@ -11,7 +11,8 @@
     display: grid;
     gap: 6.4rem;
 }
-.grid--center-v{
+
+.grid--center-v {
     align-items: center;
 }
 
@@ -42,7 +43,8 @@
     line-height: 1.2;
     margin-bottom: 9.6rem;
 }
-.heading-tertiary{
+
+.heading-tertiary {
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 3.2rem;
@@ -50,16 +52,13 @@
 
 .subheading {
     display: block;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
-    color: #cf711f;
+    color: #e67e22;
     letter-spacing: .3rem;
     margin-bottom: 1.4rem;
 }
 
-.margin-right-sm {
-    margin-right: 1.6rem !important;
-}
 
 .btn:link,
 .btn:visited {
@@ -68,7 +67,7 @@
     font-size: 2rem;
     padding: 1.6rem 3.2rem;
     border-radius: 5px;
-    transition: background-color .5s;
+    transition: all .5s;
     letter-spacing: .3rem;
 }
 
@@ -93,4 +92,37 @@
 .btn--outline:active {
     background-color: #fdf2e9;
     box-shadow: 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    letter-spacing: .3rem;
+    color: #e67e22;
+    text-decoration: none;
+    /* currentCoolor會與當前設定顏色一樣 */
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 10px;
+    transition: all .3s;
+    font-weight: 500;
+}
+.link:hover,.link:active{
+    color: #cf711f;
+    border-bottom: 2px solid transparent;
+}
+
+/* 輔助用 */
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+.center-text{
+    text-align: center;
+}
+
+strong {
+    font-weight: 750;
 }
