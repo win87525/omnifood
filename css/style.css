@@ -6,7 +6,9 @@
     預設:1
 
 - 顏色 
-    主色：#e67e22 、#fdf2e9、#555 、#333
+    主色：#e67e22 
+    淺橘色:#fdf2e9  
+    灰色:#555 #333 #6f6f6f
 
 - 陰影
 
@@ -67,6 +69,7 @@ body {
     font-weight: 500;
     font-size: 1.8rem;
     transition: all .3s;
+    letter-spacing: .3rem;
 }
 
 .main-nav-link:hover,
@@ -162,12 +165,13 @@ body {
 /*******************/
 /* 部分2-featured */
 /*******************/
-.section-featured{
-    padding: 4.8rem 0 3.2rem 0; 
+.section-featured {
+    padding: 4.8rem 0 3.2rem 0;
 }
+
 .heading-featured-in {
     font-size: 1.4rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-weight: 800;
@@ -175,11 +179,13 @@ body {
     margin-bottom: 2.4rem;
     color: #999;
 }
-.logos{
+
+.logos {
     display: flex;
     justify-content: space-around;
 }
-.logos img{
+
+.logos img {
     height: 3.2rem;
     filter: brightness(0);
     opacity: 0.5;
@@ -251,93 +257,168 @@ body {
 .section-meals {
     padding: 9.6rem 0;
 }
-.meal{
-    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
     border-radius: 11px;
     overflow: hidden;
     transition: all .3s;
     cursor: pointer;
 }
-.meal:hover{
+
+.meal:hover {
     transform: translateY(-1.2rem);
-    box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.2);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
 }
-.meal-content{
+
+.meal-content {
     padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 
 }
-.meal-tags{
+
+.meal-tags {
     margin-bottom: 1.2rem;
     display: flex;
     gap: .6rem;
 }
-.tag{
+
+.tag {
     display: inline-block;
     padding: .8rem 1.2rem;
     font-size: 1.4rem;
     letter-spacing: .3rem;
-    background-color:#51cf66;
+    background-color: #51cf66;
     color: #fff;
     border-radius: 100px;
     font-weight: 500;
     text-align: center;
 }
-.tag--vegetarian{
+
+.tag--vegetarian {
     background-color: #51cf66;
 }
+
 /* .tag--vagan{
 background-color: #94d82d;
 } */
-.tag--paleo{
+.tag--paleo {
     background-color: #94d82d;
 }
 
-.meal-title{
+.meal-title {
     font-size: 2.4rem;
     color: #333;
     font-weight: 600;
     margin-bottom: 3.2rem;
     letter-spacing: .3rem;
 }
-.meal-attributes{
+
+.meal-attributes {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
 }
-.meal-attribute{
+
+.meal-attribute {
     display: flex;
     align-items: center;
     font-size: 1.8rem;
     letter-spacing: .2rem;
     gap: 1.6rem;
 }
-.meal-icon{
+
+.meal-icon {
     height: 2.4rem;
     width: 2.4rem;
     color: #e67e22;
 }
-.meal-img{
+
+.meal-img {
     width: 100%;
 }
-.all-recipes{
+
+.all-recipes {
     text-align: center;
     font-size: 1.8rem;
 }
-.list{
+
+.list {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
 }
-.list-item{
+
+.list-item {
     font-size: 1.8rem;
     display: flex;
     align-items: center;
     gap: 1.6rem;
 }
-.list-icon{
+
+.list-icon {
     width: 3rem;
     height: 3rem;
     color: #e67e22;
+}
+
+
+/* **************** */
+/* section-testimonials */
+/* **************** */
+
+.section-testimonials {
+    background-color: #fae5d3;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+
+}
+
+.testimonials-container {
+    padding: 9.6rem;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+    letter-spacing: .2rem;
+}
+
+.testimonial-name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+.gallery-item{
+    overflow: hidden;
+}
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all .5s;
+}
+.gallery-item img:hover{
+    transform: scale(1.1);
 }
