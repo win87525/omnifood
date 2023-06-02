@@ -16,7 +16,9 @@
 
 <body>
     <header class="header">
-        <img src="img/omnifood-logo.png" class="logo" alt="omnifood logo">
+        <a href="#">
+            <img src="img/omnifood-logo.png" class="logo" alt="omnifood logo">
+        </a>
         <nav class="main-nav">
             <ul class="main-nav-liset">
                 <li><a class="main-nav-link" href="#">關於我們</a></li>
@@ -375,8 +377,97 @@
 
             </div>
         </section>
+        <section class="section-cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">
+                            免費享用第一餐!
+                        </h2>
+                        <p class="cta-text">
+                            你還在等甚麼? 趕快加入我們吧
+                        </p>
+                        <form class="cta-form" action="#">
+                            <div>
+                                <label for="full-name">全名</label>
+                                <input id="full-name" type="text" placeholder="Your name" required>
+                            </div>
+                            <div>
+                                <label for="full-email">email</label>
+                                <input id="full-email" type="email" placeholder="me@example.com" required>
+                            </div>
+                            <div>
+                                <label for="select-where">從哪裡知道我們的?</label>
+                                <select id="select-where" required>
+                                    <option value="">請選擇</option>
+                                    <option value="friends">朋友</option>
+                                    <option value="youtube">Youtube</option>
+                                    <option value="facebook">Facebook</option>
+                                    <option value="others">其他</option>
+                                </select>
+                            </div>
+                            <button class="btn btn--form">立即註冊</button>
+                        </form>
+                    </div>
+                    <div class="cta-img-box" role="img" aria-label="女生吃東西"></div>
+                </div>
+            </div>
+        </section>
     </main>
-
+    <footer class="footer">
+        <div class="container grid grid--5-color">
+            <div class="logo-col">
+                <a href="#" class="footer-logo">
+                    <img src="img/omnifood-logo.png" class="logo" alt="omnifood logo">
+                </a>
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+                <p class="copyright">copyright &copy;2023 by Omnifood</p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">關於</p>
+                <address class="contacts">
+                    <p>
+                        地址：台中市南屯區黎明路一段250號
+                    </p>
+                    <p>
+                        <a href="tel:415-201-6370">415-201-6370</a><br>
+                        <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+                    </p>
+                </address>
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">會員</p>
+                <ul class="footer-nav">
+                    <li><a href="#">建立帳戶</a></li>
+                    <li><a href="#">登入</a></li>
+                    <li><a href="#">iOS應用程式</a></li>
+                    <li><a href="#">Android應用程式</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">企業</p>
+                <ul class="footer-nav">
+                    <li><a href="#">關於Omnifood</a></li>
+                    <li><a href="#">企業專區</a></li>
+                    <li><a href="#">烹飪合作夥伴</a></li>
+                    <li><a href="#">職業機會</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">資源</p>
+                <ul class="footer-nav">
+                    <li><a href="#">食譜目錄</a></li>
+                    <li><a href="#">幫助中心</a></li>
+                    <li><a href="#">隱私權與條款</a></li>
+                </ul>
+            </nav>
+       
+        </div>
+    </footer>
 </body>
 
 </html>
