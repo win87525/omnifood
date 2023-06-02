@@ -10,6 +10,12 @@
 .grid {
     display: grid;
     gap: 6.4rem;
+    row-gap: 9.6rem;
+
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 
 .grid--center-v {
@@ -22,6 +28,10 @@
 
 .grid--3-color {
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid--4-color {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .heading-primary,
@@ -106,7 +116,9 @@
     transition: all .3s;
     font-weight: 500;
 }
-.link:hover,.link:active{
+
+.link:hover,
+.link:active {
     color: #cf711f;
     border-bottom: 2px solid transparent;
 }
@@ -119,9 +131,33 @@
 .margin-bottom-md {
     margin-bottom: 4.8rem !important;
 }
-.center-text{
+
+.center-text {
     text-align: center;
 }
+
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    letter-spacing: .3rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
 
 strong {
     font-weight: 750;
