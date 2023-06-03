@@ -22,10 +22,10 @@
         <nav class="main-nav">
             <ul class="main-nav-liset">
                 <li><a class="main-nav-link" href="#">關於我們</a></li>
-                <li><a class="main-nav-link" href="#">各式料理</a></li>
-                <li><a class="main-nav-link" href="#">客戶推薦</a></li>
-                <li><a class="main-nav-link" href="#">方案</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">搶先體驗</a></li>
+                <li><a class="main-nav-link" href=" #meal">各式料理</a></li>
+                <li><a class="main-nav-link" href="#testimonials">客戶推薦</a></li>
+                <li><a class="main-nav-link" href="#pricing">方案</a></li>
+                <li><a class="main-nav-link nav-cta" href="#cta">搶先體驗</a></li>
             </ul>
         </nav>
     </header>
@@ -126,7 +126,7 @@
             </div>
         </section>
 
-        <section class="section-meals">
+        <section class="section-meals" id="meal">
             <div class="container center-text">
                 <span class="subheading">示範餐點</span>
                 <h2 class="heading-secondary">我們將從5,000+的食譜中進行選擇</h2>
@@ -209,7 +209,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
             <div class="testimonials-container">
                 <span class="subheading">使用推薦</span>
                 <h2 class="heading-secondary">只要你嘗試過了，就回不去!</h2>
@@ -290,7 +290,7 @@
             </div>
         </section>
 
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <div class="container">
                 <span class="subheading">兩種價格方案</span>
                 <h2 class="heading-secondary">價格已包括所有方案。用戶可以隨時取消訂閱。</h2>
@@ -377,7 +377,8 @@
 
             </div>
         </section>
-        <section class="section-cta">
+
+        <section class="section-cta" id="cta">
             <div class="container">
                 <div class="cta">
                     <div class="cta-text-box">
@@ -415,54 +416,54 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container grid grid--5-color">
+        <div class="container grid grid-footer ">
             <div class="logo-col">
                 <a href="#" class="footer-logo">
                     <img src="img/omnifood-logo.png" class="logo" alt="omnifood logo">
                 </a>
                 <ul class="social-links">
-                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
                 </ul>
                 <p class="copyright">copyright &copy;2023 by Omnifood</p>
             </div>
             <div class="address-col">
                 <p class="footer-heading">關於</p>
                 <address class="contacts">
-                    <p>
+                    <p class="address">
                         地址：台中市南屯區黎明路一段250號
                     </p>
                     <p>
-                        <a href="tel:415-201-6370">415-201-6370</a><br>
-                        <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+                        <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br><br>
+                        <a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a>
                     </p>
                 </address>
             </div>
             <nav class="nav-col">
                 <p class="footer-heading">會員</p>
                 <ul class="footer-nav">
-                    <li><a href="#">建立帳戶</a></li>
-                    <li><a href="#">登入</a></li>
-                    <li><a href="#">iOS應用程式</a></li>
-                    <li><a href="#">Android應用程式</a></li>
+                    <li><a class="footer-link" href="#">建立帳戶</a></li>
+                    <li><a class="footer-link" href="#">登入</a></li>
+                    <li><a class="footer-link" href="#">iOS應用程式</a></li>
+                    <li><a class="footer-link" href="#">Android應用程式</a></li>
                 </ul>
             </nav>
             <nav class="nav-col">
                 <p class="footer-heading">企業</p>
                 <ul class="footer-nav">
-                    <li><a href="#">關於Omnifood</a></li>
-                    <li><a href="#">企業專區</a></li>
-                    <li><a href="#">烹飪合作夥伴</a></li>
-                    <li><a href="#">職業機會</a></li>
+                    <li><a class="footer-link" href="#">關於Omnifood</a></li>
+                    <li><a class="footer-link" href="#">企業專區</a></li>
+                    <li><a class="footer-link" href="#">烹飪合作夥伴</a></li>
+                    <li><a class="footer-link" href="#">職業機會</a></li>
                 </ul>
             </nav>
             <nav class="nav-col">
                 <p class="footer-heading">資源</p>
                 <ul class="footer-nav">
-                    <li><a href="#">食譜目錄</a></li>
-                    <li><a href="#">幫助中心</a></li>
-                    <li><a href="#">隱私權與條款</a></li>
+                    <li><a class="footer-link" href="#">食譜目錄</a></li>
+                    <li><a class="footer-link" href="#">幫助中心</a></li>
+                    <li><a class="footer-link" href="#">隱私權與條款</a></li>
                 </ul>
             </nav>
        

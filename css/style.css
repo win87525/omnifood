@@ -252,7 +252,7 @@ body {
 /* 部分4-meals */
 /*******************/
 .section-meals {
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 9.6rem;
 }
 
 .meal {
@@ -407,7 +407,7 @@ background-color: #94d82d;
 /* section-pricing*/
 /* **************** */
 .section-pricing {
-    padding: 9.6rem 0;
+    padding: 9.6rem 0 4.8rem;
 }
 
 .princing-plan {
@@ -515,7 +515,7 @@ background-color: #94d82d;
 /* CTA */
 /* **************** */
 .section-cta {
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta {
@@ -565,7 +565,8 @@ background-color: #94d82d;
     margin-bottom: 1.2rem;
 }
 
-.cta-form input,.cta-form select {
+.cta-form input,
+.cta-form select {
     width: 100%;
     padding: 1rem;
     padding-left: 1.6rem;
@@ -581,7 +582,8 @@ background-color: #94d82d;
 .cta-form input::placeholder {
     color: #aaa;
 }
-.cta *:focus{
+
+.cta *:focus {
     outline: none;
     /* outline: 4px dotted #e67e22;
     outline-offset: 2px; */
@@ -591,6 +593,80 @@ background-color: #94d82d;
 /* **************** */
 /* Footer */
 /* **************** */
-.footer{
-    padding: 9.6rem 0;
+.footer {
+    padding: 12.8rem 0;
+    /* border-top: 1px solid #eee; */
+    background-color: #fdf2e9;
+}
+
+.grid-footer {
+    grid-template-columns:1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #555;
+}
+
+.copyright {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: 2rem;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #767676;
+    transition: all .3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
 }
