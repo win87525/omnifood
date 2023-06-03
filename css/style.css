@@ -24,6 +24,8 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
 }
 
 body {
@@ -32,6 +34,8 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+    overflow-x: hidden;
+
 }
 
 
@@ -46,6 +50,7 @@ body {
     background-color: #fdf2e9;
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
 }
 
 .logo {
@@ -55,7 +60,7 @@ body {
 /*******************/
 /* navgation */
 /*******************/
-.main-nav-liset {
+.main-nav-list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -91,6 +96,26 @@ body {
     background-color: #cf711f;
 }
 
+/* *********************** */
+/* 頁首選單按鈕mobile */
+/* *********************** */
+
+.btn-mobile-nav {
+    border: none;
+    cursor: pointer;
+    background: none;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+    display: none;
+}
 
 /*******************/
 /* 部分1-hero */
@@ -269,8 +294,7 @@ body {
 }
 
 .meal-content {
-    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
-
+    padding: 3.2rem 3.2rem 4.8rem 3.2rem;
 }
 
 .meal-tags {
@@ -350,7 +374,6 @@ background-color: #94d82d;
     display: grid;
     grid-template-columns: 55fr 45fr;
     align-items: center;
-
 }
 
 .testimonials-container {
@@ -410,21 +433,21 @@ background-color: #94d82d;
     padding: 9.6rem 0 4.8rem;
 }
 
-.princing-plan {
+.pricing-plan {
     /* background-color: #fdf2e9; */
     border-radius: 11px;
     padding: 4.6rem;
     width: 75%;
 }
 
-.princing-plan--complete {
+.pricing-plan--complete {
     padding: 4.8rem;
     background-color: #fdf2e9;
     position: relative;
     overflow: hidden;
 }
 
-.princing-plan--complete::after {
+.pricing-plan--complete::after {
     content: "最佳方案";
     position: absolute;
     top: 5%;
@@ -438,7 +461,7 @@ background-color: #94d82d;
     transform: rotate(45deg);
 }
 
-.princing-plan--starter {
+.pricing-plan--starter {
     justify-self: end;
     border: 3px solid #fdf2e9;
 }
@@ -525,7 +548,7 @@ background-color: #94d82d;
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
     border-radius: 11px;
     background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
-    height: 50rem;
+    /* height: 50rem; */
     overflow: hidden;
 }
 
@@ -600,7 +623,7 @@ background-color: #94d82d;
 }
 
 .grid-footer {
-    grid-template-columns:1.5fr 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .footer-logo {

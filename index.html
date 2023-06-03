@@ -8,6 +8,9 @@
     <title>omnifood</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <!-- safari -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -19,8 +22,9 @@
         <a href="#">
             <img src="img/omnifood-logo.png" class="logo" alt="omnifood logo">
         </a>
+
         <nav class="main-nav">
-            <ul class="main-nav-liset">
+            <ul class="main-nav-list">
                 <li><a class="main-nav-link" href="#">關於我們</a></li>
                 <li><a class="main-nav-link" href=" #meal">各式料理</a></li>
                 <li><a class="main-nav-link" href="#testimonials">客戶推薦</a></li>
@@ -28,6 +32,10 @@
                 <li><a class="main-nav-link nav-cta" href="#cta">搶先體驗</a></li>
             </ul>
         </nav>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
     </header>
 
     <main>
@@ -81,7 +89,7 @@
                 <span class="subheading">怎麼操作?</span>
                 <h2 class="heading-secondary">三個簡單步驟，每天都帶來健康</h2>
             </div>
-            <div class="container grid grid--2-color grid--center-v">
+            <div class="container grid grid--2-cols grid--center-v">
                 <!-- 步驟1 -->
                 <div class="step-text-box">
                     <p class="step-number">01</p>
@@ -131,7 +139,7 @@
                 <span class="subheading">示範餐點</span>
                 <h2 class="heading-secondary">我們將從5,000+的食譜中進行選擇</h2>
             </div>
-            <div class="container grid grid--3-color margin-bottom-md">
+            <div class="container grid grid--3-cols margin-bottom-md">
                 <div class="meal">
                     <img src="img/meals/meal-1.jpg" class="meal-img" alt="餃子">
                     <div class="meal-content">
@@ -296,8 +304,8 @@
                 <h2 class="heading-secondary">價格已包括所有方案。用戶可以隨時取消訂閱。</h2>
             </div>
 
-            <div class="container grid grid--2-color margin-bottom-md">
-                <div class="princing-plan princing-plan--starter">
+            <div class="container grid grid--2-cols margin-bottom-md">
+                <div class="pricing-plan pricing-plan--starter">
                     <header class="plan-header">
                         <p class="plan-name">入門版</p>
                         <p class="plan-price"><span>$</span>2000</p>
@@ -320,11 +328,11 @@
                         <a href="" class="btn btn--full">現在就開始!</a>
                     </div>
                 </div>
-                <div class="princing-plan princing-plan--complete">
+                <div class="pricing-plan pricing-plan--complete">
                     <header class="plan-header">
                         <p class="plan-name">完整版</p>
-                        <p class="plan-price"><span>$</span>3500</p>
-                        <p class="plan-text">每天一餐只需要120元</p>
+                        <p class="plan-price"><span>$</span>4500</p>
+                        <p class="plan-text">每天兩餐只需要150元</p>
                     </header>
                     <ul class="list">
                         <li class="list-item"><ion-icon class="list-icon"
@@ -353,7 +361,7 @@
                 </aside>
             </div>
 
-            <div class="container grid grid--4-color">
+            <div class="container grid grid--4-cols">
                 <div class="feature">
                     <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
                     <p class="feature-title">不用在自己做飯了</p>
@@ -386,7 +394,7 @@
                             免費享用第一餐!
                         </h2>
                         <p class="cta-text">
-                            你還在等甚麼? 趕快加入我們吧
+                            心動不如馬上行動，你還在等甚麼? 趕快加入我們吧!
                         </p>
                         <form class="cta-form" action="#">
                             <div>
@@ -407,7 +415,7 @@
                                     <option value="others">其他</option>
                                 </select>
                             </div>
-                            <button class="btn btn--form">立即註冊</button>
+                            <button class="btn btn--form">立即訂餐</button>
                         </form>
                     </div>
                     <div class="cta-img-box" role="img" aria-label="女生吃東西"></div>
@@ -466,9 +474,10 @@
                     <li><a class="footer-link" href="#">隱私權與條款</a></li>
                 </ul>
             </nav>
-       
+
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
