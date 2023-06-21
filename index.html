@@ -15,9 +15,14 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
+
+    <!-- header的nav bar -->
     <header class="header">
         <a href="#">
             <img src="img/omnifood-logo.png" class="logo" alt="omnifood logo">
@@ -39,7 +44,7 @@
     </header>
 
     <main>
-
+        <!-- 第一部分 -->
         <section class="section-hero">
             <div class="hero">
                 <div class="hero_text-box">
@@ -70,7 +75,8 @@
             </div>
         </section>
 
-        <section class="section-featured">
+        <!-- 小LOGO部分 -->
+        <section class="section-featured" data-aos="fade-down">
             <div class="container">
                 <h2 class="heading-featured-in">AS FEATURED IN</h2>
                 <div class="logos">
@@ -83,7 +89,7 @@
             </div>
         </section>
 
-
+        <!-- 操作順序 -->
         <section class="section-how">
             <div class="container">
                 <span class="subheading">怎麼操作?</span>
@@ -102,12 +108,12 @@
                     </p>
                 </div>
 
-                <div class="step-img-box">
+                <div class="step-img-box" data-aos="fade-up">
                     <img src="img/app/app-screen-1.png" class="step-img" alt="第一步驟">
                 </div>
 
                 <!-- 步驟2 -->
-                <div class="step-img-box">
+                <div class="step-img-box" data-aos="fade-up">
                     <img src="img/app/app-screen-2.png" class="step-img" alt="第二步驟">
                 </div>
                 <div class="step-text-box">
@@ -128,19 +134,22 @@
                     </p>
                 </div>
 
-                <div class="step-img-box">
+                <div class="step-img-box" data-aos="fade-up">
                     <img src="img/app/app-screen-3.png" class="step-img" alt="第三步驟">
                 </div>
             </div>
         </section>
 
-        <section class="section-meals" id="meal">
-            <div class="container center-text">
-                <span class="subheading">示範餐點</span>
-                <h2 class="heading-secondary">我們將從5,000+的食譜中進行選擇</h2>
+        <!-- 示範餐點 -->
+        <section class="section-meals" id="meal" >
+            <div class="container center-text" data-aos="zoom-in">
+                <span class="subheading" >示範餐點</span>
+                <h2 class="heading-secondary" >我們將從5,000+的食譜中進行選擇</h2>
             </div>
+
+
             <div class="container grid grid--3-cols margin-bottom-md">
-                <div class="meal">
+                <div class="meal" data-aos="fade-right">
                     <img src="img/meals/meal-1.jpg" class="meal-img" alt="餃子">
                     <div class="meal-content">
                         <div class="meal-tags">
@@ -164,7 +173,7 @@
                     </div>
                 </div>
 
-                <div class="meal">
+                <div class="meal" data-aos="fade-right">
                     <img src="img/meals/meal-2.jpg" class="meal-img" alt="餃子">
                     <div class="meal-content">
                         <div class="meal-tags">
@@ -188,7 +197,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="diets">
+                <div class="diets" data-aos="fade-right">
                     <h3 class="heading-tertiary">適用任何飲食方式：</h3>
                     <ul class="list">
                         <li class="list-item"><ion-icon class="list-icon"
@@ -217,7 +226,9 @@
             </div>
         </section>
 
-        <section class="section-testimonials" id="testimonials">
+
+        <!-- 用戶推薦 -->
+        <section class="section-testimonials" id="testimonials" >
             <div class="testimonials-container">
                 <span class="subheading">使用推薦</span>
                 <h2 class="heading-secondary">只要你嘗試過了，就回不去!</h2>
@@ -257,7 +268,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="gallery">
+            <div  data-aos="fade-right" class="gallery" >
                 <figure class="gallery-item">
                     <img src="img/gallery/gallery-1.jpg" alt="食物照片">
                     <!-- <figcaption>caption</figcaption> -->
@@ -305,7 +316,7 @@
             </div>
 
             <div class="container grid grid--2-cols margin-bottom-md">
-                <div class="pricing-plan pricing-plan--starter">
+                <div class="pricing-plan pricing-plan--starter" data-aos="flip-down">
                     <header class="plan-header">
                         <p class="plan-name">入門版</p>
                         <p class="plan-price"><span>$</span>2000</p>
@@ -328,7 +339,8 @@
                         <a href="" class="btn btn--full">現在就開始!</a>
                     </div>
                 </div>
-                <div class="pricing-plan pricing-plan--complete">
+
+                <div class="pricing-plan pricing-plan--complete" data-aos="flip-down">
                     <header class="plan-header">
                         <p class="plan-name">完整版</p>
                         <p class="plan-price"><span>$</span>4500</p>
@@ -478,6 +490,11 @@
         </div>
     </footer>
     <script src="./script.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
